@@ -63,10 +63,10 @@ class Triangle extends Shape {
     }
 }
 
-// Main class to test the implementation
+
 public class Task2 {
     public static void main(String[] args) {
-        Shape circle = new Circle(5);
+        Shape circle = new Circle(8);
         Shape square = new Square(4);
         Shape triangle = new Triangle(3, 6);
 

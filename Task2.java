@@ -1,10 +1,10 @@
-// Base class
+
 abstract class Shape {
     public abstract void draw();
     public abstract double calculateArea();
 }
 
-// Subclass: Circle
+
 class Circle extends Shape {
     private double radius;
 
@@ -23,7 +23,7 @@ class Circle extends Shape {
     }
 }
 
-// Subclass: Square
+
 class Square extends Shape {
     private double side;
 
@@ -42,7 +42,7 @@ class Square extends Shape {
     }
 }
 
-// Subclass: Triangle
+
 class Triangle extends Shape {
     private double base;
     private double height;
@@ -66,7 +66,7 @@ class Triangle extends Shape {
 
 public class Task2 {
     public static void main(String[] args) {
-        Shape circle = new Circle(8);
+        Shape circle = new Circle(5);
         Shape square = new Square(4);
         Shape triangle = new Triangle(3, 6);
 

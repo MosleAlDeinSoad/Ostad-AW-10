@@ -1,9 +1,8 @@
-// Base class
 class BankAccount {
     protected double balance;
 
-    public BankAccount(double balance) {
-        this.balance = balance;
+    public BankAccount(double initialBalance) {
+        this.balance = initialBalance;
     }
 
     public void deposit(double amount) {
@@ -25,12 +24,11 @@ class BankAccount {
     }
 }
 
-// Subclass: SavingsAccount
 class SavingsAccount extends BankAccount {
     private static final double WITHDRAWAL_LIMIT = 1000;
 
-    public SavingsAccount(double balance) {
-        super(balance);
+    public SavingsAccount(double initialBalance) {
+        super(initialBalance);
     }
 
     @Override
@@ -43,12 +41,11 @@ class SavingsAccount extends BankAccount {
     }
 }
 
-// Subclass: CheckingAccount
 class CheckingAccount extends BankAccount {
     private static final double TRANSACTION_FEE = 2.5;
 
-    public CheckingAccount(double balance) {
-        super(balance);
+    public CheckingAccount(double initialBalance) {
+        super(initialBalance);
     }
 
     @Override
@@ -63,7 +60,6 @@ class CheckingAccount extends BankAccount {
     }
 }
 
-// Main class to test the implementation
 public class Task1 {
     public static void main(String[] args) {
         BankAccount savings = new SavingsAccount(1500);
